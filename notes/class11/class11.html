@@ -1,0 +1,96 @@
+<!-- /*****************************************************************************/-->
+<!-- /*****************************************************************************/-->
+<!-- /************************ C L A S S  1 1  N O T E S **************************/-->
+<!-- /*****************************************************************************/-->
+<!-- /*****************************************************************************/ -->
+
+<!-- /* DOCUMENT OBJECT MODEL *************************************************/ -->
+ 
+ 
+
+<!-- /* CHROMIUM DEVELOPER TOOLS **********************************************/ -->
+
+<!-- // Go to Developer Tools in Chrome settings to inspect it's .css -->
+
+<!-- // Go to Console to interact with the site -->
+
+let doc = window.document
+doc.children // this retrievces an .html tree -->
+
+
+<!-- PROTOTYPES **************************************************************/ -->
+
+<!-- // constructor functions are by convention capitalized -->
+
+<!-- ELEMENT QUERIES *********************************************************/ -->
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        Sample
+    </head>
+    <body>
+        <h1 id="header">Class</h1>
+        <p>Hello
+            <input id="name" type="text"/>
+            <button>Say</button>
+        </p>
+        <div id="content"></div>
+    </body>
+</html>
+
+<!-- doc.getElementByld("header").textContent -->
+
+<!-- // returns 'Class' -->
+
+<!-- COMMON NODE PROPERTIES **************************************************/ -->
+
+<!-- // constructor functions are by convention capitalized -->
+
+let e = doc.querySelector("p")
+e.textContent
+<!-- // outputs > "Hello   Say" -->
+e.innerHTML
+<!-- // outputs > "Hello <input ... <button> ... -->
+e.outerHTML
+<!-- // outputs > "<p> Hello <input> ... Mbutton> ... -->
+e.setAttribute("style", "color:blue")
+e.style.color="blue"
+
+<!-- // this changes 'Hello" to blue -->
+
+<!-- EXERCISE *********************************************************/ -->
+
+<!-- DOM MUTATING OPERATIONS ******************************************/ -->
+
+e.innerHTML = "New <em>text</em>"
+img.src = "newImage.jpg"
+e.style.display = "none"
+e.className = "newClass"
+
+<!-- CHANGING THE DOM TREE ******************************************/ -->
+
+e1 = document.createElement("P");
+e2 = document.createElement("My text");
+
+<!-- EXERCISE ******************************************/ -->
+
+<!-- USER COMMUNICATION ******************************************/ -->
+
+console.log("msg")
+alert("Error!")
+confirm("OK?")
+
+<!-- INVOKING JS CODE ******************************************/ -->
+
+<!-- // the usual way of invoking JavaScript -->
+
+<!-- // this changes 'Hello" to blue -->
+
+<!-- // this changes 'Hello" to blue -->
+
+<!-- // this changes 'Hello" to blue -->
+
+<!-- // this changes 'Hello" to blue -->
+
+

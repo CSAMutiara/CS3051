@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>Exercise 2</title>
+    </head>
+    <body>
+        
+        <ol id="mylist">
+            <li>first</li>
+            <li>second</li>
+            <li>text</li>
+            <li>more text</li>
+        </ol>
+        
+        <script>
+            let updateList = function(text, pos, replace) {
+                var doc = window.document.getElementById("mylist");
+                console.log(doc.length);
+                if (pos > 0 && pos < doc.length) {
+                    console.log("in")
+                    var node = document.createElement("LI");
+                    var textnode = document.createTextNode(text);
+                    node.appendChild(textnode);
+                    doc.insertBefore(node, doc.childNodes[pos]);
+                }
+            }
+        </script>
+        
+    </body>
+</html>

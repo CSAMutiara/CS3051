@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Class 14 Exercise</title>
+    </head>
+    <body>
+        <ul>
+            <li>Noun: <input type="text" id="noun"/></li>
+            <li>Adjective: <input type="text" id="adjective"/></li>
+            <li>Someone's Name: <input type="text" id="person"/></li>
+        </ul>
+        <button id="tell-button" onclick="myfun();">Tell it</button>
+        <p></p>
+        <div id="story"></div>
+        
+        <!-- let myfun = function(event) {
+                alert(event)
+        } //to test for responsivity --> 
+        <!-- reread about high order functions -->
+            
+        <script>
+            let myfun = function(event) {
+                let doc = window.document
+                let noun = doc.querySelector("#noun")
+                let adjective = doc.querySelector("#adjective")
+                let person = doc.querySelector("#person")
+                
+                let story = doc.querySelector("#story")
+                story.textContent = person.value + " likes the " + adjective.value + " " + noun.value;
+            }
+            
+            let btn = window.document.querySelector("#tell-button")
+            btn.addEventListener("click", myfun)
+            
+        </script>
+    </body>
+</html>
+
